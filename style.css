@@ -1,4 +1,3 @@
-
 body {
   /* width: 100%; */
   height: 100vh;
@@ -11,14 +10,13 @@ img {
   width: 20px;
   height: 20px;
 }
+
 .sidebar {
   display: grid;
-  grid-template-rows: 1fr 8fr  ;
+  grid-template-rows: 1fr 8fr;
   grid-row: 1/3;
 
   background-color: #1992d4;
-
-
 }
 .header {
   grid-column: 2/3;
@@ -71,28 +69,85 @@ h3 {
 
 .mainContent {
   display: grid;
-  grid-template-columns: 4fr 1fr;
+  grid-template-columns: 2fr 1fr;
   background-color: lightgrey;
 }
 
-.projectSection{
+.projectSection {
+  display: grid;
+  /* grid-template-columns: repeat(auto-fill,minmax(50px,500px)); */
+  grid-template-columns: repeat(2, minmax(350px, 500px));
+  /* grid-template-rows: repeat(auto-fill, minmax(250px, 2fr)); */
+  grid-auto-rows: minmax(250px, 2fr);
 
-    display:grid;
-    /* grid-template-columns: repeat(auto-fill,minmax(50px,500px)); */
-    grid-template-columns:repeat(2,minmax(350px,1fr));
-    grid-template-rows: repeat(auto-fill,minmax(100px,1fr));
-    gap: 20px;
-    margin: 0rem 2rem;
+  gap: 20px;
+  margin: 0rem 2rem;
+  overflow: visible;
 }
 
-.projectWrapper h2{
-    margin: 2rem 2rem;
+.projectWrapper h2 {
+  margin: 2rem 2rem;
+}
+
+.projectCard {
+  border: 2px solid green;
+  border-radius: 25px;
+}
+
+/* .rightSidebar {
+  margin: 2rem 2rem;
+} */
+
+
+.rightSidebar h2 {
+  margin: 2rem 2rem;
+}
+
+.announcementWrapper {
+  background-color: white;
+  border: solid 2px green;
+  border-radius: 25px;
+
+  margin: 0rem 2rem
+}
+
+.announceCard {
+  margin: 2rem 2rem;
+
+
+}
+.announceCard:nth-child(2) {
+  border-bottom: 2px solid black;
+  border-top: 2px solid black;
+}
+
+.trending {
+  background-color: white;
+  border: solid 2px green;
+  border-radius: 25px;
+  display: flex;
+  flex-direction: column;
+  margin: 0rem 2rem;
+}
+
+.trendingCard {
+  display: flex;
+  align-items: center;
+
+  margin: 2rem 2rem;
+}
+
+.trendingCard img{
+  width: 2rem;
+  height: 2rem;
+}
+
+.nameTag p{
+  margin: 0px;
+}
+
+h4 {
+  margin: 0px;
 }
 
 
-
-.projectCard{
-    border: 2px solid green;
-
-   
-}
