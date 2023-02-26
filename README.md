@@ -7,4 +7,4 @@ This is a dashboard page I created based off of this design file [Admin Dashboar
 -Nuances of grid and how to establish layouts <br />
 -Working with SVG images<br />
 -When to not use react<br />
-    -Attempted to add icons through react and learned that is not how it works but setup template pages and learned from that.
+&nbsp; -Attempted to add icons through react and learned that is not how it works but setup template pages and learned from that.
